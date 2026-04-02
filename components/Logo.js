@@ -2,33 +2,45 @@ export default function Logo({ className = '' }) {
   return (
     <svg
       className={className}
-      viewBox="0 0 120 50"
+      viewBox="0 0 200 70"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-label="The Lending Hand Initiative"
     >
-      {/* Circle */}
-      <circle cx="25" cy="25" r="23" fill="#1B4D3E" />
-      {/* Stylized hand / flame icon */}
-      <path
-        d="M25 10 C20 14 16 18 16 23 C16 28 20 32 25 33 C30 32 34 28 34 23 C34 18 30 14 25 10Z"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M22 20 C22 24 23 27 25 29 C27 27 28 24 28 20"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      {/* Text */}
-      <text x="54" y="16" fontSize="7" fontWeight="700" fill="#1B4D3E" fontFamily="Inter, sans-serif" letterSpacing="0.5">THE</text>
-      <text x="54" y="26" fontSize="8.5" fontWeight="800" fill="#1B4D3E" fontFamily="Inter, sans-serif" letterSpacing="0.3">LENDING</text>
-      <text x="54" y="36" fontSize="8.5" fontWeight="800" fill="#1B4D3E" fontFamily="Inter, sans-serif" letterSpacing="0.3">HAND</text>
-      <text x="54" y="44" fontSize="5.5" fontWeight="500" fill="#1B4D3E" fontFamily="Inter, sans-serif" letterSpacing="1.5">INITIATIVE</text>
+      {/* Green circle background */}
+      <circle cx="35" cy="35" r="33" fill="#2D5A3D" />
+
+      {/* Hand icon - stylized open hand */}
+      <g transform="translate(35,35)" fill="white">
+        {/* Palm */}
+        <ellipse cx="0" cy="4" rx="9" ry="10" />
+        {/* Thumb */}
+        <ellipse cx="-9" cy="0" rx="3.5" ry="6" transform="rotate(-30,-9,0)" />
+        {/* Index finger */}
+        <ellipse cx="-4" cy="-12" rx="3" ry="7" transform="rotate(-8,-4,-12)" />
+        {/* Middle finger */}
+        <ellipse cx="1" cy="-14" rx="3" ry="8" />
+        {/* Ring finger */}
+        <ellipse cx="6" cy="-12" rx="3" ry="7" transform="rotate(8,6,-12)" />
+        {/* Pinky */}
+        <ellipse cx="10" cy="-8" rx="2.5" ry="5.5" transform="rotate(18,10,-8)" />
+      </g>
+
+      {/* "THE" text */}
+      <text x="78" y="20" fontSize="9" fontWeight="600" fill="#2D5A3D"
+        fontFamily="Inter, Georgia, sans-serif" letterSpacing="2">THE</text>
+
+      {/* "LENDING" text */}
+      <text x="78" y="35" fontSize="13" fontWeight="800" fill="#2D5A3D"
+        fontFamily="Inter, Georgia, sans-serif" letterSpacing="0.5">LENDING</text>
+
+      {/* "HAND" text */}
+      <text x="78" y="50" fontSize="13" fontWeight="800" fill="#2D5A3D"
+        fontFamily="Inter, Georgia, sans-serif" letterSpacing="0.5">HAND</text>
+
+      {/* "INITIATIVE" text */}
+      <text x="78" y="62" fontSize="7.5" fontWeight="500" fill="#2D5A3D"
+        fontFamily="Inter, Georgia, sans-serif" letterSpacing="2">INITIATIVE</text>
     </svg>
   );
 }
