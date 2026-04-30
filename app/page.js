@@ -81,7 +81,7 @@ export default function Home() {
               Impact
             </h1>
             <p className="text-green-100 text-lg leading-relaxed mb-8 max-w-lg">
-              The Lending Hand Initiative bridges the gap between patients, communities, and healthcare systems — ensuring APOL1 kidney disease conversations move upstream, where they can save lives.
+              Helping organizations move conversations around APOL1 upstream — increasing awareness, strengthening trust, and connecting communities to the information and support they need.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -115,9 +115,9 @@ export default function Home() {
       <section className="bg-brand-light py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-brand-dark text-xl md:text-2xl font-medium leading-relaxed italic">
-            "My goal is to ensure that conversations around APOL1 move upstream — increasing awareness, strengthening trust, and connecting more individuals to the information and support they need."
+            “My goal is to ensure that conversations around APOL1 move upstream — increasing awareness, strengthening trust, and connecting more individuals to the information and support they need.”
           </p>
-          <p className="mt-4 text-brand-mid font-semibold">— Jorden Albright, Founder</p>
+          <p className="mt-4 text-brand-mid font-semibold">— Jaime Albright, MSW</p>
         </div>
       </section>
 
@@ -148,7 +148,7 @@ export default function Home() {
       <section className="bg-brand-muted py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-mid mb-8">
-            Recognized & Engaged By
+            Recognized &amp; Engaged By
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {partners.map((p) => (
@@ -167,7 +167,7 @@ export default function Home() {
       <section className="py-20 max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-brand-dark mb-4">Ready to Collaborate?</h2>
         <p className="text-gray-500 max-w-lg mx-auto mb-8">
-          Whether you're a pharmaceutical company, patient organization, or advocacy group — let's work together to build trust and drive impact in APOL1-affected communities.
+          Whether you\'re a pharmaceutical company, patient organization, or advocacy group — let\'s work together to build trust and drive impact in APOL1-affected communities.
         </p>
         <Link
           href="/contact"
