@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-brand-dark text-white">
       <div className="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
         <div>
-          <Logo className="h-12 w-auto brightness-0 invert mb-4" />
+          <Logo className="mb-4" inverted />
           <p className="text-sm text-green-100 leading-relaxed">
             Advancing trust, equity, and community impact through patient advocacy and APOL1 kidney disease awareness.
           </p>
