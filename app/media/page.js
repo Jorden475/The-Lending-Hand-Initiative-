@@ -51,7 +51,7 @@ export default function Media() {
           <span className="inline-block bg-brand-mid/30 text-green-200 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
             Media
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Watch & Learn</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story in Action</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
             Panels, documentaries, congressional briefings, and community education featuring The Lending Hand Initiative.
           </p>
