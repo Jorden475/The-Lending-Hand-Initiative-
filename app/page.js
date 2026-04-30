@@ -94,7 +94,7 @@ export default function Home() {
                 href="/contact"
                 className="border border-white/40 text-white font-semibold px-7 py-3 rounded-full hover:bg-white/10 transition-colors"
               >
-                Work With Me
+                Work With Us
               </Link>
             </div>
           </div>
