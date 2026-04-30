@@ -81,7 +81,7 @@ export default function Home() {
               Impact
             </h1>
             <p className="text-green-100 text-lg leading-relaxed mb-8 max-w-lg">
-              Helping organizations move conversations around APOL1 upstream — increasing awareness, strengthening trust, and connecting communities to the information and support they need.
+              Helping organizations reach APOL1-affected communities early — building awareness, strengthening trust, and ensuring no one faces a diagnosis without the information and support they need.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
