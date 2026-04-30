@@ -42,7 +42,7 @@ export default function Footer() {
                 404-285-4529
               </a>
             </li>
-            <li className="pt-2 flex gap-4">
+            <li className="pt-2">
               <a href="https://twitter.com/JordenAlbright" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 @JordenAlbright
               </a>
