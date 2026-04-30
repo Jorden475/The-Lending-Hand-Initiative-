@@ -110,7 +110,7 @@ export default function About() {
         </div>
 
         <div className="space-y-12">
-          {team.map(({ name, title, bio, quote }, i) => (
+          {team.map(({ name, title, photo, bio, quote }, i) => (
             <div
               key={name}
               className={`grid md:grid-cols-5 gap-10 items-start p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow ${
