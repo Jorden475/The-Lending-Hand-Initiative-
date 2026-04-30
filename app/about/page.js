@@ -1,3 +1,34 @@
+const team = [
+  {
+    name: 'Jorden Albright',
+    title: 'Founder | Patient Advocate & National Speaker',
+    bio: `Jorden is an Atlanta-based patient advocate living with APOL1-mediated FSGS. Diagnosed in 2022, he transformed his personal health journey into a mission to advance awareness, early screening, and health equity in rare kidney disease.
+
+In addition to his advocacy work, Jorden serves as a Director at Rise Property Group, a boutique commercial real estate brokerage based in Atlanta. He has spoken at forums including the Congressional Black Caucus and the International Society of Glomerular Disease, and has contributed to regulatory and policy discussions at the FDA and KHI APOL1 Kidney Disease Roundtable.
+
+Jorden is committed to ensuring that lived patient experience informs research, innovation, and the future of kidney care.`,
+    quote: null,
+  },
+  {
+    name: 'Jaime Albright, MSW',
+    title: 'Patient Parent & Advocate',
+    bio: `Jaime is a Georgia-based patient parent and kidney disease advocate. She and her husband, Joshua Henighan, are raising six children. After their sons, Joshua (diagnosed in 2021) and Jorden (diagnosed in 2022) were diagnosed with Focal Segmental Glomerulosclerosis (FSGS), a rare genetic kidney disease, Jaime became a passionate advocate for early screening and genetic testing, recognizing that their stories of early diagnosis were uncommon.
+
+She now facilitates patient support groups, serves on multiple patient education panels, and was appointed to Governor Brian Kemp's Rare Disease Advisory Council. In addition to her advocacy work, Jaime is a writer and producer at Tenderfoot TV, where she uses storytelling to amplify meaningful voices and impactful narratives.`,
+    quote: 'It\'s time to go upstream — focusing on awareness and prevention to make a real impact in the kidney community.',
+  },
+  {
+    name: 'Joshua Albright',
+    title: 'Patient Advocate & Teen Coordinator',
+    bio: `Joshua is a 21-year-old Communication major at Georgia State University and Teen Coordinator at The Drake House. Diagnosed in 2021 at age 17 with stage 2 kidney disease and FSGS, he participates in a clinical trial for APOL1-mediated FSGS.
+
+Joshua advocates for kidney disease awareness and early screening, serving on multiple patient education panels. He attended the 2024 KDIGO Conference in Ghana and was appointed to Governor Brian Kemp's Rare Disease Advisory Council. He is co-founding a consulting firm with his brother, Jorden, to bridge the gap between patients and the pharmaceutical world.
+
+Joshua coined the phrase "Facing Struggle, Gaining Strength" for FSGS to highlight resilience and empower others, and uses his social media platforms to show that living fully after diagnosis is possible.`,
+    quote: null,
+  },
+];
+
 const boards = [
   {
     org: 'APOL1 Kidney Disease Roadmap Implementation Roundtable',
@@ -13,6 +44,16 @@ const boards = [
     org: 'American Kidney Fund (AKF) – Patient Advisory Council',
     role: 'Member',
     years: '2022–present',
+  },
+  {
+    org: "Governor Brian Kemp's Rare Disease Advisory Council",
+    role: 'Member — Jaime Albright',
+    years: 'Current',
+  },
+  {
+    org: "Governor Brian Kemp's Rare Disease Advisory Council",
+    role: 'Member — Joshua Albright',
+    years: 'Current',
   },
 ];
 
@@ -37,7 +78,7 @@ const awards = [
 
 export const metadata = {
   title: 'About | The Lending Hand Initiative',
-  description: 'Meet Jorden Albright — Patient Advocate, National Speaker, and APOL1 Community Advisor.',
+  description: 'Meet the Albright family — patient advocates, national speakers, and APOL1 community leaders.',
 };
 
 export default function About() {
@@ -49,71 +90,60 @@ export default function About() {
           <span className="inline-block bg-brand-mid/30 text-green-200 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
             About
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet Jorden Albright</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
-            Patient Advocate · National Speaker · APOL1 Community Advisor
+            A family united by lived experience — turning personal health journeys into national advocacy for APOL1 kidney disease awareness and health equity.
           </p>
         </div>
       </section>
 
-      {/* Bio */}
-      <section className="py-20 max-w-6xl mx-auto px-6 grid md:grid-cols-5 gap-14 items-start">
-        <div className="md:col-span-3 space-y-5 text-gray-700 leading-relaxed">
-          <h2 className="text-2xl font-bold text-brand-dark">Who I Am</h2>
-          <p>
-            Living with APOL1-mediated FSGS (Focal Segmental Glomerulosclerosis) shaped Jorden Albright's
-            commitment to improving awareness, education, and engagement around kidney health. Rather than
-            letting his diagnosis define him, Jorden channeled it into a mission.
-          </p>
-          <p>
-            Through national advocacy, public speaking, and collaboration with patient organizations,
-            clinicians, and researchers, Jorden works to elevate patient voices while expanding
-            understanding of APOL1-associated kidney disease — both within impacted communities and
-            among those who may not yet realize they are at risk.
-          </p>
-          <p>
-            His goal is to ensure that conversations around APOL1 move upstream — increasing awareness,
-            strengthening trust, and connecting more individuals to the information and support they need.
-          </p>
-          <p>
-            As the founder of <strong className="text-brand-dark">The Lending Hand Initiative</strong>,
-            Jorden bridges the gap between patients and healthcare systems, ensuring that programs and
-            initiatives reflect real community priorities — not just clinical assumptions.
+      {/* Team bios */}
+      <section className="py-20 max-w-6xl mx-auto px-6">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-bold text-brand-dark mb-3">Meet the Team</h2>
+          <p className="text-gray-500 max-w-xl mx-auto text-sm">
+            The Lending Hand Initiative is built on family, faith, and a shared commitment to making sure no one faces an APOL1 diagnosis alone.
           </p>
         </div>
 
-        <div className="md:col-span-2 space-y-6">
-          {/* Credential card */}
-          <div className="bg-brand-light rounded-2xl p-7 space-y-4">
-            <h3 className="font-semibold text-brand-dark text-sm uppercase tracking-widest">Credentials</h3>
-            <div className="space-y-3 text-sm text-gray-700">
-              <div className="flex items-start gap-2">
-                <span className="mt-1 w-2 h-2 rounded-full bg-brand-accent flex-shrink-0" />
-                <span>APOL1 Community Advisor &amp; Patient Advocate</span>
+        <div className="space-y-12">
+          {team.map(({ name, title, bio, quote }, i) => (
+            <div
+              key={name}
+              className={`grid md:grid-cols-5 gap-10 items-start p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow ${
+                i % 2 === 0 ? 'bg-white' : 'bg-brand-muted'
+              }`}
+            >
+              {/* Avatar placeholder */}
+              <div className="md:col-span-1 flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full bg-brand-light border-4 border-brand-accent/30 flex items-center justify-center mb-3">
+                  <span className="text-3xl font-bold text-brand-dark">
+                    {name.split(' ')[0][0]}
+                  </span>
+                </div>
+                <p className="font-bold text-brand-dark text-sm">{name.split(',')[0]}</p>
+                {name.includes(',') && (
+                  <p className="text-xs text-brand-mid font-medium">{name.split(', ')[1]}</p>
+                )}
               </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-1 w-2 h-2 rounded-full bg-brand-accent flex-shrink-0" />
-                <span>NORD Rare Disease Drug Development Certificate (2025)</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-1 w-2 h-2 rounded-full bg-brand-accent flex-shrink-0" />
-                <span>AKF Kidney Health Coach (2025)</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-1 w-2 h-2 rounded-full bg-brand-accent flex-shrink-0" />
-                <span>Georgia Kidney Champion Award — NKF (2026)</span>
+
+              {/* Bio content */}
+              <div className="md:col-span-4">
+                <h3 className="text-xl font-bold text-brand-dark mb-1">{name}</h3>
+                <p className="text-brand-mid text-sm font-semibold mb-4">{title}</p>
+                <div className="space-y-3">
+                  {bio.split('\n\n').map((para, j) => (
+                    <p key={j} className="text-gray-600 text-sm leading-relaxed">{para}</p>
+                  ))}
+                </div>
+                {quote && (
+                  <blockquote className="mt-5 border-l-4 border-brand-accent pl-4 italic text-brand-dark text-sm">
+                    "{quote}"
+                  </blockquote>
+                )}
               </div>
             </div>
-          </div>
-
-          {/* Senate recognition */}
-          <div className="border border-brand-accent/30 rounded-2xl p-6 bg-white">
-            <p className="text-sm text-gray-600 italic leading-relaxed">
-              "Recognized in the Senate Gallery by Senator Kay Kirkpatrick during the announcement
-              of a resolution designating FSGS Awareness Day."
-            </p>
-            <p className="mt-3 text-xs text-brand-mid font-semibold">Georgia State Capitol · March 2026</p>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -123,7 +153,7 @@ export default function About() {
           <h2 className="text-2xl font-bold text-brand-dark mb-8">Boards, Advisory Councils &amp; Committees</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {boards.map(({ org, role, years }) => (
-              <div key={org} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+              <div key={org + role} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
                 <p className="font-semibold text-brand-dark text-sm leading-snug mb-2">{org}</p>
                 <p className="text-brand-mid text-sm font-medium">{role}</p>
                 <p className="text-gray-400 text-xs mt-1">{years}</p>
