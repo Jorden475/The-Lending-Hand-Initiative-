@@ -19,7 +19,7 @@ Jorden is committed to ensuring that lived patient experience informs research, 
     bio: `Jaime is a Georgia-based patient parent and kidney disease advocate. She and her husband, Joshua Henighan, are raising six children. After their sons, Joshua (diagnosed in 2021) and Jorden (diagnosed in 2022) were diagnosed with Focal Segmental Glomerulosclerosis (FSGS), a rare genetic kidney disease, Jaime became a passionate advocate for early screening and genetic testing, recognizing that their stories of early diagnosis were uncommon.
 
 She now facilitates patient support groups, serves on multiple patient education panels, and was appointed to Governor Brian Kemp's Rare Disease Advisory Council. In addition to her advocacy work, Jaime is a writer and producer at Tenderfoot TV, where she uses storytelling to amplify meaningful voices and impactful narratives.`,
-    quote: "It's time to go upstream — focusing on awareness and prevention to make a real impact in the kidney community.",
+    quote: "My goal is to ensure that conversations around APOL1 move upstream — increasing awareness, strengthening trust, and connecting more individuals to the information and support they need.",
   },
   {
     name: 'Joshua Albright',
@@ -147,7 +147,7 @@ export default function About() {
                 </div>
                 {quote && (
                   <blockquote className="mt-5 border-l-4 border-brand-accent pl-4 italic text-brand-dark text-sm">
-                    "{quote}"
+                    “{quote}”
                   </blockquote>
                 )}
               </div>
