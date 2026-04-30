@@ -19,9 +19,9 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-24">
+      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-28">
         <Link href="/" className="flex-shrink-0">
-          <Logo className="h-20 w-auto" />
+          <Logo className="h-24 w-auto" />
         </Link>
 
         {/* Desktop nav */}

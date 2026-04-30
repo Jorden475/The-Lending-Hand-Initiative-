@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="antialiased">
         <Navbar />
-        <main className="pt-24">{children}</main>
+        <main className="pt-28">{children}</main>
         <Footer />
       </body>
     </html>
