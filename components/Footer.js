@@ -1,14 +1,12 @@
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
     <footer className="bg-brand-dark text-white">
       <div className="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
         <div>
-          <div className="mb-4">
-            <p className="text-white font-bold text-lg leading-tight">THE LENDING HAND</p>
-            <p className="text-brand-accent text-sm font-semibold tracking-widest uppercase">Initiative</p>
-          </div>
+          <Logo className="h-10 w-auto mb-4" />
           <p className="text-sm text-green-100 leading-relaxed">
             Advancing trust, equity, and community impact through patient advocacy and APOL1 kidney disease awareness.
           </p>
