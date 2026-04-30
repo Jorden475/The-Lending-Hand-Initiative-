@@ -100,7 +100,7 @@ export default function Services() {
           <span className="inline-block bg-brand-mid/30 text-green-200 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
             Services
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">How I Can Help</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">How We Can Help</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
             A range of engagement services designed to advance trust, equity, and community impact in the APOL1 kidney health space.
           </p>

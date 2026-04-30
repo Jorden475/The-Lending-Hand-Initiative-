@@ -124,7 +124,7 @@ export default function Home() {
       {/* Value props */}
       <section className="py-20 max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold text-brand-dark mb-3">Strategic Value I Bring</h2>
+          <h2 className="text-3xl font-bold text-brand-dark mb-3">Strategic Value We Bring</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             A unique combination of lived experience, national credibility, and deep community trust.
           </p>
