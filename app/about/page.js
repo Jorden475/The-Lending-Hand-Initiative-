@@ -113,7 +113,7 @@ export default function About() {
                   <img
                     src={photo}
                     alt={name}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <p className="font-bold text-brand-dark text-sm">{name.split(',')[0]}</p>
@@ -127,7 +127,7 @@ export default function About() {
                 <h3 className="text-xl font-bold text-brand-dark mb-1">{name}</h3>
                 <p className="text-brand-mid text-sm font-semibold mb-4">{title}</p>
                 <div className="space-y-3">
-                  {bio.split('\\n\\n').map((para, j) => (
+                  {bio.split('\n\n').map((para, j) => (
                     <p key={j} className="text-gray-600 text-sm leading-relaxed">{para}</p>
                   ))}
                 </div>
