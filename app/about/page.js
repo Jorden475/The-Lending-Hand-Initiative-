@@ -2,6 +2,7 @@ const team = [
   {
     name: 'Jorden Albright',
     title: 'Founder | Patient Advocate & National Speaker',
+    photo: '/jorden.jpg',
     bio: `Jorden is an Atlanta-based patient advocate living with APOL1-mediated FSGS. Diagnosed in 2022, he transformed his personal health journey into a mission to advance awareness, early screening, and health equity in rare kidney disease.
 
 In addition to his advocacy work, Jorden serves as a Director at Rise Property Group, a boutique commercial real estate brokerage based in Atlanta. He has spoken at forums including the Congressional Black Caucus and the International Society of Glomerular Disease, and has contributed to regulatory and policy discussions at the FDA and KHI APOL1 Kidney Disease Roundtable.
@@ -12,6 +13,7 @@ Jorden is committed to ensuring that lived patient experience informs research, 
   {
     name: 'Jaime Albright, MSW',
     title: 'Patient Parent & Advocate',
+    photo: '/jaime.jpg',
     bio: `Jaime is a Georgia-based patient parent and kidney disease advocate. She and her husband, Joshua Henighan, are raising six children. After their sons, Joshua (diagnosed in 2021) and Jorden (diagnosed in 2022) were diagnosed with Focal Segmental Glomerulosclerosis (FSGS), a rare genetic kidney disease, Jaime became a passionate advocate for early screening and genetic testing, recognizing that their stories of early diagnosis were uncommon.
 
 She now facilitates patient support groups, serves on multiple patient education panels, and was appointed to Governor Brian Kemp's Rare Disease Advisory Council. In addition to her advocacy work, Jaime is a writer and producer at Tenderfoot TV, where she uses storytelling to amplify meaningful voices and impactful narratives.`,
@@ -20,6 +22,7 @@ She now facilitates patient support groups, serves on multiple patient education
   {
     name: 'Joshua Albright',
     title: 'Patient Advocate & Teen Coordinator',
+    photo: '/joshua.jpg',
     bio: `Joshua is a 21-year-old Communication major at Georgia State University and Teen Coordinator at The Drake House. Diagnosed in 2021 at age 17 with stage 2 kidney disease and FSGS, he participates in a clinical trial for APOL1-mediated FSGS.
 
 Joshua advocates for kidney disease awareness and early screening, serving on multiple patient education panels. He attended the 2024 KDIGO Conference in Ghana and was appointed to Governor Brian Kemp's Rare Disease Advisory Council. He is co-founding a consulting firm with his brother, Jorden, to bridge the gap between patients and the pharmaceutical world.
@@ -114,12 +117,14 @@ export default function About() {
                 i % 2 === 0 ? 'bg-white' : 'bg-brand-muted'
               }`}
             >
-              {/* Avatar placeholder */}
+              {/* Photo */}
               <div className="md:col-span-1 flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full bg-brand-light border-4 border-brand-accent/30 flex items-center justify-center mb-3">
-                  <span className="text-3xl font-bold text-brand-dark">
-                    {name.split(' ')[0][0]}
-                  </span>
+                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-brand-accent/30 mb-3 bg-brand-light">
+                  <img
+                    src={photo}
+                    alt={name}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <p className="font-bold text-brand-dark text-sm">{name.split(',')[0]}</p>
                 {name.includes(',') && (
