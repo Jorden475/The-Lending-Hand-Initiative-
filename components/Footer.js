@@ -46,13 +46,18 @@ export default function Footer() {
               </a>
             </li>
             <li className="pt-2">
-              <a href="https://twitter.com/JordenAlbright" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                @JordenAlbright
+              <a href="https://www.linkedin.com/in/jorden-albright-4627271b2" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                LinkedIn — Jorden Albright
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/FaceStruggleGainStrength" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                @FaceStruggleGainStrength
+              <a href="https://www.instagram.com/jordenalbright/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                Instagram — @jordenalbright
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/facestrugglegainstrength?igsh=MTJpNXo4cm5uM3NibA%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                Instagram — @facestrugglegainstrength
               </a>
             </li>
           </ul>
