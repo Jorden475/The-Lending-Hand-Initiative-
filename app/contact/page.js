@@ -92,7 +92,7 @@ export default function Contact() {
           <div>
             <h2 className="text-xl font-bold text-brand-dark mb-2">Get In Touch</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Whether you're a pharmaceutical company, patient organization, advocacy group, media outlet, or event organizer — I'd love to hear from you.
+              Whether you're a pharmaceutical company, patient organization, advocacy group, media outlet, or event organizer — we'd love to hear from you.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function Contact() {
           </div>
 
           <div className="border-t border-gray-100 pt-6">
-            <h3 className="font-semibold text-brand-dark text-sm mb-3">I'm available for:</h3>
+            <h3 className="font-semibold text-brand-dark text-sm mb-3">We're available for:</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               {[
                 'Keynotes & panel discussions',
@@ -212,7 +212,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent resize-none"
-                  placeholder="Tell me about your project, event, or how you'd like to collaborate..."
+                  placeholder="Tell us about your project, event, or how you'd like to collaborate..."
                 />
               </div>
 
