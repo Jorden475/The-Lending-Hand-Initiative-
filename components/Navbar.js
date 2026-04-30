@@ -43,7 +43,7 @@ export default function Navbar() {
             href="/contact"
             className="ml-2 bg-brand-dark text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-mid transition-colors"
           >
-            Work With Me
+            Work With Us
           </Link>
         </nav>
 
@@ -82,7 +82,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="bg-brand-dark text-white text-sm font-semibold px-5 py-2 rounded-full text-center hover:bg-brand-mid transition-colors"
           >
-            Work With Me
+            Work With Us
           </Link>
         </div>
       )}
