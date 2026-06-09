@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const stats = [
   { value: '70K+', label: 'Radio Listeners Reached' },
-  { value: '20+', label: 'National Speaking Engagements' },
+  { value: '20+', label: 'Speaking Engagements' },
   { value: '3', label: 'Federal Advisory Boards' },
   { value: '2026', label: 'Georgia Kidney Champion Award' },
 ];
