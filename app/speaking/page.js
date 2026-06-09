@@ -156,7 +156,7 @@ const engagements = [
 
 export const metadata = {
   title: 'Speaking | The Lending Hand Initiative',
-  description: 'National speaking engagements, panel appearances, and keynote addresses by Jorden Albright.',
+  description: 'International speaking engagements, panel appearances, and keynote addresses by Jorden Albright.',
 };
 
 export default function Speaking() {
@@ -170,7 +170,7 @@ export default function Speaking() {
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Speaking Engagements</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
-            A national voice in kidney health equity, APOL1 awareness, and patient advocacy.
+            An international voice in kidney health equity, APOL1 awareness, and patient advocacy.
           </p>
         </div>
       </section>
@@ -182,7 +182,7 @@ export default function Speaking() {
             { value: '20+', label: 'Engagements' },
             { value: '70K+', label: 'Radio Listeners' },
             { value: '5+', label: 'Years of Advocacy' },
-            { value: 'National', label: 'Reach' },
+            { value: 'International', label: 'Reach' },
           ].map(({ value, label }) => (
             <div key={label}>
               <div className="text-3xl font-bold text-brand-dark">{value}</div>
