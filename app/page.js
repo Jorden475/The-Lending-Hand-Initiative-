@@ -52,18 +52,18 @@ const valueProps = [
 
 const partners = [
   'Congressional Black Caucus',
-  'American Kidney Fund',
-  'NephCure',
-  'National Organization for Rare Disorders',
-  'AstraZeneca',
   'Food & Drug Administration',
   'National Kidney Foundation',
+  'American Kidney Fund',
+  'National Organization for Rare Disorders',
+  'AstraZeneca',
+  'Biogen',
+  'Apellis Pharmaceuticals',
   'Kidney Health Initiative',
   'International Society of Glomerular Disease',
   'Travere Therapeutics',
+  'NephCure',
   'Maze Therapeutics',
-  'Apellis Pharmaceuticals',
-  'Biogen',
 ];
 
 export default function Home() {
