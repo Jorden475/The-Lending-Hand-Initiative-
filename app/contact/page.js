@@ -1,9 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-// Sign up at formspree.io, create a form, and paste your form ID below.
-// It looks like: https://formspree.io/f/abcdefgh
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjyvwjo';
 
 const contactItems = [
   {
