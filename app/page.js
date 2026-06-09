@@ -172,7 +172,7 @@ export default function Home() {
       <section className="py-20 max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-brand-dark mb-4">Ready to Collaborate?</h2>
         <p className="text-gray-500 max-w-lg mx-auto mb-8">
-          Whether you're a pharmaceutical company, patient organization, or advocacy group — let's work together to build trust and drive impact in APOL1-affected communities.
+          Whether you're a pharmaceutical company, nonprofit organization, healthcare institution, or community partner, let's work together to strengthen awareness, build trust, and create meaningful connections that improve outcomes for individuals and families affected by kidney disease.
         </p>
         <Link
           href="/contact"
