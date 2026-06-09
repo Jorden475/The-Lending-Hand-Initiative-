@@ -24,7 +24,7 @@ const engagements = [
         role: 'Panelist',
       },
       {
-        event: 'Black Health Matters: What\'s in Them Genes?',
+        event: "Black Health Matters: What's in Them Genes?",
         detail: 'Panel Sponsored by AstraZeneca',
         role: 'Speaker & Panelist',
       },
@@ -35,12 +35,12 @@ const engagements = [
         note: 'June 27, 2025',
       },
       {
-        event: 'NephCure\'s Patient Summit',
+        event: "NephCure's Patient Summit",
         detail: '',
         role: 'Speaker',
       },
       {
-        event: 'AKF\'s 2025 Kidney Action Week',
+        event: "AKF's 2025 Kidney Action Week",
         detail: 'Is Genetic Testing Right for You?',
         role: 'Panelist',
       },
@@ -80,12 +80,12 @@ const engagements = [
         role: 'Guest Speaker',
       },
       {
-        event: 'NephCure\'s Rare Kidneys Connect: Atlanta',
+        event: "NephCure's Rare Kidneys Connect: Atlanta",
         detail: '',
         role: 'Panelist',
       },
       {
-        event: 'NephCure\'s Community Event at Ebenezer Baptist Church',
+        event: "NephCure's Community Event at Ebenezer Baptist Church",
         detail: '',
         role: 'Speaker',
       },
@@ -111,7 +111,7 @@ const engagements = [
         role: 'Keynote Speaker',
       },
       {
-        event: 'NephCure\'s First APOL1 Live Webinar',
+        event: "NephCure's First APOL1 Live Webinar",
         detail: 'Celebrating APOL1 Awareness',
         role: 'Speaker',
       },
@@ -170,7 +170,7 @@ export default function Speaking() {
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Speaking Engagements</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
-            An international voice in kidney health equity, APOL1 awareness, and patient advocacy.
+            An international voice in rare kidney disease, health equity, and patient advocacy.
           </p>
         </div>
       </section>
@@ -233,7 +233,7 @@ export default function Speaking() {
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-4">Book Jorden to Speak</h2>
           <p className="text-green-200 mb-8">
-            Available for conferences, patient summits, panels, webinars, legislative engagements, and community events focused on APOL1, kidney health equity, and rare disease advocacy.
+            Available for conferences, patient summits, panels, webinars, legislative engagements, and community events focused on rare kidney disease, APOL1, kidney health equity, and patient advocacy.
           </p>
           <a
             href="/contact"
