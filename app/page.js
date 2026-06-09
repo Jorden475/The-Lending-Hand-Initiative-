@@ -25,7 +25,7 @@ const valueProps = [
           d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
       </svg>
     ),
-    title: 'National Credibility',
+    title: 'International Credibility',
     body: 'Recognized across the kidney health ecosystem through engagements with the Congressional Black Caucus, FDA/KHI APOL1 Advisory Council, ISGD, NORD, NKF, AKF, and NephCure.',
   },
   {
@@ -57,7 +57,7 @@ const partnerTiers = [
   },
   {
     label: 'Medical Societies & Research',
-    orgs: ['International Society of Glomerular Disease', 'Kidney Health Initiative'],
+    orgs: ['International Society of Glomerular Disease', 'Kidney Disease: Improving Global Outcomes', 'Kidney Health Initiative'],
   },
   {
     label: 'Pharmaceutical & Biotech',
@@ -123,7 +123,7 @@ export default function Home() {
       <section className="bg-brand-light py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-brand-dark text-xl md:text-2xl font-medium leading-relaxed italic">
-            “My goal is to ensure that conversations around APOL1 move upstream — increasing awareness, strengthening trust, and connecting more individuals to the information and support they need.”
+            &ldquo;My goal is to ensure that conversations around APOL1 move upstream — increasing awareness, strengthening trust, and connecting more individuals to the information and support they need.&rdquo;
           </p>
           <p className="mt-4 text-brand-mid font-semibold">— Jaime Albright, MSW</p>
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-brand-dark mb-3">Strategic Value We Bring</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            A unique combination of lived experience, national credibility, and deep community trust.
+            A unique combination of lived experience, international credibility, and deep community trust.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -182,7 +182,7 @@ export default function Home() {
       <section className="py-20 max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-brand-dark mb-4">Ready to Collaborate?</h2>
         <p className="text-gray-500 max-w-lg mx-auto mb-8">
-          Whether you're a pharmaceutical company, nonprofit organization, healthcare institution, or community partner, let's work together to strengthen awareness, build trust, and create meaningful connections that improve outcomes for individuals and families affected by kidney disease.
+          Whether you&apos;re a pharmaceutical company, nonprofit organization, healthcare institution, or community partner, let&apos;s work together to strengthen awareness, build trust, and create meaningful connections that improve outcomes for individuals and families affected by kidney disease.
         </p>
         <Link
           href="/contact"

@@ -84,7 +84,7 @@ const awards = [
 
 export const metadata = {
   title: 'About | The Lending Hand Initiative',
-  description: 'Meet the Albright family — patient advocates, national speakers, and APOL1 community leaders.',
+  description: 'Meet the Albright family — patient advocates, international speakers, and APOL1 community leaders.',
 };
 
 export default function About() {
@@ -98,7 +98,7 @@ export default function About() {
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
-            A family united by lived experience — turning personal health journeys into national advocacy for APOL1 kidney disease awareness and health equity.
+            A family united by lived experience — turning personal health journeys into international advocacy for APOL1 kidney disease awareness and health equity.
           </p>
         </div>
       </section>
@@ -147,7 +147,7 @@ export default function About() {
                 </div>
                 {quote && (
                   <blockquote className="mt-5 border-l-4 border-brand-accent pl-4 italic text-brand-dark text-sm">
-                    “{quote}”
+                    &ldquo;{quote}&rdquo;
                   </blockquote>
                 )}
               </div>
