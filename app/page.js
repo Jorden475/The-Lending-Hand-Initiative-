@@ -54,11 +54,16 @@ const partners = [
   'Congressional Black Caucus',
   'American Kidney Fund',
   'NephCure',
-  'NORD',
+  'National Organization for Rare Disorders',
   'AstraZeneca',
-  'FDA / NKF / KHI',
+  'Food & Drug Administration',
+  'National Kidney Foundation',
+  'Kidney Health Initiative',
+  'International Society of Glomerular Disease',
   'Travere Therapeutics',
   'Maze Therapeutics',
+  'Apellis Pharmaceuticals',
+  'Biogen',
 ];
 
 export default function Home() {
