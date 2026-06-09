@@ -1,6 +1,10 @@
 'use client';
 import { useState } from 'react';
 
+// Sign up at formspree.io, create a form, and paste your form ID below.
+// It looks like: https://formspree.io/f/abcdefgh
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID';
+
 const contactItems = [
   {
     icon: (
@@ -65,10 +69,35 @@ export default function Contact() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          organization: form.organization,
+          inquiryType: form.type,
+          message: form.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -79,7 +108,7 @@ export default function Contact() {
           <span className="inline-block bg-brand-mid/30 text-green-200 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
             Contact
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Let's Work Together</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Let&apos;s Work Together</h1>
           <p className="text-green-200 text-lg max-w-xl mx-auto">
             Reach out for speaking engagements, strategic partnerships, community consulting, or media inquiries.
           </p>
@@ -92,7 +121,7 @@ export default function Contact() {
           <div>
             <h2 className="text-xl font-bold text-brand-dark mb-2">Get In Touch</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Whether you're a pharmaceutical company, patient organization, advocacy group, media outlet, or event organizer — we'd love to hear from you.
+              Whether you&apos;re a pharmaceutical company, patient organization, advocacy group, media outlet, or event organizer — we&apos;d love to hear from you.
             </p>
           </div>
 
@@ -117,7 +146,7 @@ export default function Contact() {
           </div>
 
           <div className="border-t border-gray-100 pt-6">
-            <h3 className="font-semibold text-brand-dark text-sm mb-3">We're available for:</h3>
+            <h3 className="font-semibold text-brand-dark text-sm mb-3">We&apos;re available for:</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               {[
                 'Keynotes & panel discussions',
@@ -216,11 +245,18 @@ export default function Contact() {
                 />
               </div>
 
+              {error && (
+                <p className="text-red-600 text-sm">
+                  Something went wrong. Please try again or email us directly at JordenDarnellAlbright@gmail.com.
+                </p>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-brand-dark text-white font-semibold py-3.5 rounded-xl hover:bg-brand-mid transition-colors"
+                disabled={loading}
+                className="w-full bg-brand-dark text-white font-semibold py-3.5 rounded-xl hover:bg-brand-mid transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send Message
+                {loading ? 'Sending…' : 'Send Message'}
               </button>
             </form>
           )}
