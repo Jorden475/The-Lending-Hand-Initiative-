@@ -3,9 +3,9 @@ const services = [
     number: '01',
     title: 'Patient Perspective',
     description:
-      'Provides real-world perspectives on the experiences, barriers, and motivations of individuals affected by APOL1-associated kidney disease — informing program direction and decision-making with authentic patient insight.',
+      'Provides real-world perspectives on the experiences, barriers, and motivations of individuals affected by rare kidney disease — informing program direction and decision-making with authentic patient insight.',
     bullets: [
-      'Authentic representation of the APOL1 patient journey',
+      'Authentic representation of the rare kidney disease patient journey',
       'Identifying gaps between clinical programs and lived experience',
       'Informing research, communications, and outreach materials',
     ],
@@ -14,7 +14,7 @@ const services = [
     number: '02',
     title: 'Community Strategy',
     description:
-      'Advises on approaches to engage APOL1-impacted communities through trusted messengers, relevant channels, and meaningful touchpoints that drive awareness, trust, and action.',
+      'Advises on approaches to engage rare kidney disease communities through trusted messengers, relevant channels, and meaningful touchpoints that drive awareness, trust, and action.',
     bullets: [
       'Trusted messenger identification and activation',
       'HBCU and community organization engagement',
@@ -25,7 +25,7 @@ const services = [
     number: '03',
     title: 'Partnership Development',
     description:
-      'Identifies and facilitates opportunities to strengthen connections with HBCUs, community organizations, patient advocates, and mission-aligned groups to broaden APOL1 awareness and engagement.',
+      'Identifies and facilitates opportunities to strengthen connections with HBCUs, community organizations, patient advocates, and mission-aligned groups to broaden rare kidney disease awareness and engagement.',
     bullets: [
       'Strategic introductions to patient leaders and advocacy organizations',
       'Connection to community groups that expand partner reach and trust',
@@ -36,7 +36,7 @@ const services = [
     number: '04',
     title: 'Trusted Voices & Community Insight',
     description:
-      'Offers perspective on trusted messengers and communication approaches that foster trust within communities affected by APOL1-associated kidney disease, strengthening the reach and relevance of initiatives.',
+      'Offers perspective on trusted messengers and communication approaches that foster trust within communities affected by rare kidney disease, strengthening the reach and relevance of initiatives.',
     bullets: [
       'Culturally relevant, accessible messaging review',
       'Community trust-building strategies',
@@ -47,7 +47,7 @@ const services = [
     number: '05',
     title: 'Speaking & Panel Engagements',
     description:
-      'Available for keynote addresses, panel discussions, webinars, and community events focused on APOL1 kidney disease, health equity, genetic testing, and rare disease advocacy.',
+      'Available for keynote addresses, panel discussions, webinars, and community events focused on rare kidney disease, APOL1, health equity, genetic testing, and patient advocacy.',
     bullets: [
       'Conferences, patient summits, and medical meetings',
       'Radio, broadcast, and digital media appearances',
@@ -78,11 +78,11 @@ const howWeWork = [
   },
   {
     title: 'Collaborative Partnership',
-    body: 'Work together to refine messaging, strengthen outreach, and ensure programs reflect the needs and perspectives of the APOL1 community.',
+    body: 'Work together to refine messaging, strengthen outreach, and ensure programs reflect the needs and perspectives of the rare kidney disease community.',
   },
   {
     title: 'Unified Direction',
-    body: 'Help maintain clarity and alignment across APOL1 priorities by reinforcing consistent messaging and coordinated efforts.',
+    body: 'Help maintain clarity and alignment across rare kidney disease priorities by reinforcing consistent messaging and coordinated efforts.',
   },
 ];
 
@@ -102,7 +102,7 @@ export default function Services() {
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">How We Can Help</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
-            A range of engagement services designed to advance trust, equity, and community impact in the APOL1 kidney health space.
+            A range of engagement services designed to advance trust, equity, and community impact in the rare kidney disease space.
           </p>
         </div>
       </section>
@@ -157,7 +157,7 @@ export default function Services() {
       <section className="py-20 text-center max-w-3xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-brand-dark mb-4">Ready to Partner?</h2>
         <p className="text-gray-500 mb-8">
-          Let's discuss how The Lending Hand Initiative can support your organization's APOL1 engagement, outreach, or advocacy goals.
+          Let&apos;s discuss how The Lending Hand Initiative can support your organization&apos;s rare kidney disease engagement, outreach, or advocacy goals.
         </p>
         <a
           href="/contact"

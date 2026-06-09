@@ -84,7 +84,7 @@ const awards = [
 
 export const metadata = {
   title: 'About | The Lending Hand Initiative',
-  description: 'Meet the Albright family — patient advocates, international speakers, and APOL1 community leaders.',
+  description: 'Meet the Albright family — patient advocates, international speakers, and rare kidney disease community leaders.',
 };
 
 export default function About() {
@@ -98,7 +98,7 @@ export default function About() {
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
           <p className="text-green-200 text-lg max-w-2xl mx-auto">
-            A family united by lived experience — turning personal health journeys into international advocacy for APOL1 kidney disease awareness and health equity.
+            A family united by lived experience — turning personal health journeys into international advocacy for rare kidney disease awareness and health equity.
           </p>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function About() {
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-brand-dark mb-3">Meet the Team</h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm">
-            The Lending Hand Initiative is built on family, faith, and a shared commitment to making sure no one faces an APOL1 diagnosis alone.
+            The Lending Hand Initiative is built on family, faith, and a shared commitment to making sure no one faces a rare kidney disease diagnosis alone.
           </p>
         </div>
 

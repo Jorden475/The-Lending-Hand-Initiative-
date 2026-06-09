@@ -10,7 +10,7 @@ export default function Footer() {
             <Logo className="h-10 w-auto" />
           </div>
           <p className="text-sm text-green-100 leading-relaxed">
-            Advancing trust, equity, and community impact through patient advocacy and APOL1 kidney disease awareness.
+            Advancing trust, equity, and community impact through patient advocacy and rare kidney disease awareness.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-green-800 py-5 text-center text-xs text-green-400">
-        © {new Date().getFullYear()} The Lending Hand Initiative. All rights reserved.
+        &copy; {new Date().getFullYear()} The Lending Hand Initiative. All rights reserved.
       </div>
     </footer>
   );

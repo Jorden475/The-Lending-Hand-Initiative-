@@ -16,7 +16,7 @@ const valueProps = [
       </svg>
     ),
     title: 'Lived Expertise',
-    body: "Firsthand understanding of the APOL1 patient journey — offering real insight into barriers, motivations, and daily realities that don't appear in clinical data.",
+    body: "Firsthand understanding of the rare kidney disease patient journey — offering real insight into barriers, motivations, and daily realities that don't appear in clinical data.",
   },
   {
     icon: (
@@ -36,7 +36,7 @@ const valueProps = [
       </svg>
     ),
     title: 'Community Relationships',
-    body: 'Deep-rooted relationships with patient communities, HBCUs, local organizations, and trusted community partners — essential access points for APOL1 outreach and awareness.',
+    body: 'Deep-rooted relationships with patient communities, HBCUs, local organizations, and trusted community partners — essential access points for rare kidney disease outreach and awareness.',
   },
   {
     icon: (
@@ -89,7 +89,7 @@ export default function Home() {
               Impact
             </h1>
             <p className="text-green-100 text-lg leading-relaxed mb-8 max-w-lg">
-              Helping organizations reach APOL1-affected communities early — building awareness, strengthening trust, and ensuring no one faces a diagnosis without the information and support they need.
+              Helping organizations reach rare kidney disease communities early — building awareness, strengthening trust, and ensuring no one faces a diagnosis without the information and support they need.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
