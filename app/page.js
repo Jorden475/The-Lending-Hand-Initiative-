@@ -50,20 +50,23 @@ const valueProps = [
   },
 ];
 
-const partners = [
-  'Congressional Black Caucus',
-  'Food & Drug Administration',
-  'International Society of Glomerular Disease',
-  'National Organization for Rare Disorders',
-  'National Kidney Foundation',
-  'American Kidney Fund',
-  'AstraZeneca',
-  'Biogen',
-  'Apellis Pharmaceuticals',
-  'Kidney Health Initiative',
-  'Travere Therapeutics',
-  'NephCure',
-  'Maze Therapeutics',
+const partnerTiers = [
+  {
+    label: 'Government & Policy',
+    orgs: ['Congressional Black Caucus', 'Food & Drug Administration'],
+  },
+  {
+    label: 'Medical Societies & Research',
+    orgs: ['International Society of Glomerular Disease', 'Kidney Health Initiative'],
+  },
+  {
+    label: 'Pharmaceutical & Biotech',
+    orgs: ['AstraZeneca', 'Biogen', 'Apellis Pharmaceuticals', 'Travere Therapeutics', 'Maze Therapeutics'],
+  },
+  {
+    label: 'Patient Advocacy & Nonprofits',
+    orgs: ['National Kidney Foundation', 'American Kidney Fund', 'National Organization for Rare Disorders', 'NephCure'],
+  },
 ];
 
 export default function Home() {
@@ -152,17 +155,24 @@ export default function Home() {
       {/* Partners / Recognized By */}
       <section className="bg-brand-muted py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand-mid mb-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-mid mb-10">
             Recognized &amp; Engaged By
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {partners.map((p) => (
-              <span
-                key={p}
-                className="bg-white border border-gray-200 text-gray-700 text-sm font-medium px-5 py-2 rounded-full shadow-sm"
-              >
-                {p}
-              </span>
+          <div className="space-y-8">
+            {partnerTiers.map(({ label, orgs }) => (
+              <div key={label}>
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">{label}</p>
+                <div className="flex flex-wrap justify-center gap-3">
+                  {orgs.map((p) => (
+                    <span
+                      key={p}
+                      className="bg-white border border-gray-200 text-gray-700 text-sm font-medium px-5 py-2 rounded-full shadow-sm"
+                    >
+                      {p}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
