@@ -50,6 +50,37 @@ const valueProps = [
   },
 ];
 
+const byTheNumbers = [
+  {
+    value: '37M',
+    label: 'Americans living with CKD',
+    detail: '1 in 7 U.S. adults has chronic kidney disease — most with no symptoms.',
+    source: 'CDC, 2026',
+    href: 'https://www.cdc.gov/kidney-disease/about/index.html',
+  },
+  {
+    value: '4x',
+    label: 'Higher kidney failure risk',
+    detail: 'Black Americans develop kidney failure at nearly 4 times the rate of white Americans.',
+    source: 'American Kidney Fund',
+    href: 'https://www.kidneyfund.org/resource/kidney-disease-and-black-americans',
+  },
+  {
+    value: '13%',
+    label: 'of Black Americans',
+    detail: 'Carry two APOL1 high-risk variants — an estimated 4–6 million people with elevated lifetime kidney disease risk.',
+    source: 'NephCure Kidney International',
+    href: 'https://nephcure.org/apol1-kidney-disease/',
+  },
+  {
+    value: '9 in 10',
+    label: 'People with CKD are unaware',
+    detail: "The vast majority of people living with chronic kidney disease don't know they have it.",
+    source: 'CDC / American Kidney Fund',
+    href: 'https://www.kidneyfund.org/all-about-kidneys/quick-kidney-disease-facts-and-stats',
+  },
+];
+
 const partnerTiers = [
   {
     label: 'Government & Policy',
@@ -126,6 +157,33 @@ export default function Home() {
             &ldquo;My goal is to ensure that conversations around APOL1 move upstream — increasing awareness, strengthening trust, and connecting more individuals to the information and support they need.&rdquo;
           </p>
           <p className="mt-4 text-brand-mid font-semibold">— Jaime Albright, MSW</p>
+        </div>
+      </section>
+
+      {/* By the Numbers */}
+      <section className="py-20 max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-brand-dark mb-3">By the Numbers</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            The data behind the urgency — and why this work cannot wait.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {byTheNumbers.map(({ value, label, detail, source, href }) => (
+            <div key={label} className="flex flex-col p-7 rounded-2xl bg-brand-light border border-brand-accent/20 hover:shadow-md transition-shadow">
+              <div className="text-4xl font-black text-brand-dark mb-1">{value}</div>
+              <div className="text-sm font-bold text-brand-mid mb-3">{label}</div>
+              <p className="text-gray-600 text-sm leading-relaxed flex-1">{detail}</p>
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 text-xs text-brand-mid hover:text-brand-dark font-semibold underline underline-offset-2 transition-colors"
+              >
+                Source: {source} ↗
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
