@@ -3,9 +3,27 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'The Lending Hand Initiative | Patient Advocacy & Community Outreach',
+  metadataBase: new URL('https://www.thelendinghandinitiative.org'),
+  title: {
+    default: 'The Lending Hand Initiative | Patient Advocacy & Rare Kidney Disease Awareness',
+    template: '%s | The Lending Hand Initiative',
+  },
   description:
-    'Jorden Albright — Patient Advocate, National Speaker, and APOL1 Community Advisor. Advancing trust, equity, and community impact through kidney health advocacy.',
+    'Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and ensuring no one faces a diagnosis without the information and support they need.',
+  openGraph: {
+    title: 'The Lending Hand Initiative',
+    description:
+      'Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and ensuring no one faces a diagnosis without the information and support they need.',
+    url: 'https://www.thelendinghandinitiative.org',
+    siteName: 'The Lending Hand Initiative',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Lending Hand Initiative',
+    description:
+      'Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and ensuring no one faces a diagnosis without the information and support they need.',
+  },
 };
 
 export default function RootLayout({ children }) {
