@@ -1,11 +1,14 @@
 import { ImageResponse } from 'next/og';
+import { readFile } from 'fs/promises';
+import { join } from 'path';
 
-export const runtime = 'edge';
-export const alt = 'The Lending Hand Initiative — Patient Advocacy & Rare Kidney Disease Awareness';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default function Image() {
+export default async function Image() {
+  const logoBuffer = await readFile(join(process.cwd(), 'public/logo.png'));
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString('base64')}`;
+
   return new ImageResponse(
     (
       <div
@@ -17,17 +20,23 @@ export default function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '80px 100px',
+          padding: '60px 100px',
           fontFamily: 'sans-serif',
         }}
       >
+        <img
+          src={logoSrc}
+          style={{ width: 220, height: 'auto', marginBottom: 36 }}
+          alt="The Lending Hand Initiative"
+        />
+
         <div
           style={{
             fontSize: 18,
             color: '#4CAF9A',
-            letterSpacing: '0.25em',
+            letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            marginBottom: 32,
+            marginBottom: 20,
             fontWeight: 600,
           }}
         >
@@ -36,20 +45,7 @@ export default function Image() {
 
         <div
           style={{
-            fontSize: 68,
-            fontWeight: 800,
-            color: 'white',
-            textAlign: 'center',
-            lineHeight: 1.1,
-            marginBottom: 32,
-          }}
-        >
-          The Lending Hand Initiative
-        </div>
-
-        <div
-          style={{
-            fontSize: 26,
+            fontSize: 24,
             color: '#bbf7d0',
             textAlign: 'center',
             maxWidth: 820,
@@ -61,8 +57,8 @@ export default function Image() {
 
         <div
           style={{
-            marginTop: 52,
-            fontSize: 18,
+            marginTop: 40,
+            fontSize: 16,
             color: '#4CAF9A',
             fontWeight: 600,
             letterSpacing: '0.05em',
