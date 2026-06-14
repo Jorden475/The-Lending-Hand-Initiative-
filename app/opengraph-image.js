@@ -52,7 +52,7 @@ export default async function Image() {
             lineHeight: 1.5,
           }}
         >
-          Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and ensuring no one faces a diagnosis alone.
+          Bridging the gap between rare kidney disease communities and the organizations working to serve them.
         </div>
 
         <div
