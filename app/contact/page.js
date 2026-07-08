@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnjyvwjo';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xpqggqaz';
 
 const contactItems = [
   {
