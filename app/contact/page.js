@@ -12,8 +12,8 @@ const contactItems = [
       </svg>
     ),
     label: 'Email',
-    value: 'JordenDarnellAlbright@gmail.com',
-    href: 'mailto:JordenDarnellAlbright@gmail.com',
+    value: 'Jorden@lendinghandinitiative.org',
+    href: 'mailto:Jorden@lendinghandinitiative.org',
   },
   {
     icon: (
@@ -245,7 +245,7 @@ export default function Contact() {
 
               {error && (
                 <p className="text-red-600 text-sm">
-                  Something went wrong. Please try again or email us directly at JordenDarnellAlbright@gmail.com.
+                  Something went wrong. Please try again or email us directly at Jorden@lendinghandinitiative.org.
                 </p>
               )}
 
