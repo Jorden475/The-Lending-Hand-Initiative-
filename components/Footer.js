@@ -37,8 +37,8 @@ export default function Footer() {
           <h4 className="text-sm font-semibold uppercase tracking-widest text-green-300 mb-4">Get In Touch</h4>
           <ul className="space-y-2 text-sm text-green-100">
             <li>
-              <a href="mailto:JordenDarnellAlbright@gmail.com" className="hover:text-white transition-colors break-all">
-                JordenDarnellAlbright@gmail.com
+              <a href="mailto:Jorden@lendinghandinitiative.org" className="hover:text-white transition-colors break-all">
+                Jorden@lendinghandinitiative.org
               </a>
             </li>
             <li>
