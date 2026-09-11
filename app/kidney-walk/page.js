@@ -34,7 +34,7 @@ export default function KidneyWalk() {
             Team &ldquo;Facing Struggle, Gaining Strength&rdquo;
           </p>
           <p className="text-green-100 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-            Every step is a statement. Join the Albright family and The Lending Hand Initiative as we walk for the 37 million Americans living with kidney disease — and the millions who don&apos;t yet know it.
+            Every step is a statement. Join the Albright-Henighan family and The Lending Hand Initiative as we walk for the 37 million Americans living with kidney disease — and the millions who don&apos;t yet know it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -76,7 +76,7 @@ export default function KidneyWalk() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-brand-dark mb-4">Why This Walk Matters</h2>
           <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            For the Albright family, this isn&apos;t just a walk — it&apos;s personal.
+            For the Albright-Henighan family, this isn&apos;t just a walk — it&apos;s personal.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -111,10 +111,10 @@ export default function KidneyWalk() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-brand-dark mb-4">About Our Team</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            &ldquo;Facing Struggle, Gaining Strength&rdquo; is more than a team name — it&apos;s the Albright family&apos;s story. After a rare kidney disease diagnosis changed everything, Jaime, Jorden, and Joshua turned their experience into a mission: ensuring no family walks this road alone and that every community has access to the information and support they need.
+            &ldquo;Facing Struggle, Gaining Strength&rdquo; is more than a team name — it&apos;s the Albright-Henighan family&apos;s story. After a rare kidney disease diagnosis changed everything, Jaime, Jorden, and Joshua turned their experience into a mission: ensuring no family walks this road alone and that every community has access to the information and support they need.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Through The Lending Hand Initiative, the Albright family has reached over 70,000 radio listeners, spoken at the Congressional Black Caucus, the FDA, NephCure, the American Kidney Fund, NORD, and been recognized by U.S. senators for their advocacy work. Tomorrow, we walk.
+            Through The Lending Hand Initiative, the Albright-Henighan family has reached over 70,000 radio listeners, spoken at the Congressional Black Caucus, the FDA, NephCure, the American Kidney Fund, NORD, and been recognized by U.S. senators for their advocacy work. Tomorrow, we walk.
           </p>
         </div>
       </section>
@@ -139,6 +139,10 @@ export default function KidneyWalk() {
             <Link href="/contact" className="underline hover:text-white transition-colors">
               Get in touch
             </Link>
+            {' · '}
+            <a href="https://www.kidneywalk.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">
+              Learn more about the NKF Kidney Walk
+            </a>
           </p>
         </div>
       </section>
