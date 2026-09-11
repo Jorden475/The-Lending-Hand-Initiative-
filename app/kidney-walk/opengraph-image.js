@@ -61,7 +61,7 @@ export default async function Image() {
               Walk With Us
             </div>
             <div style={{ fontSize: 28, fontWeight: 600, color: '#4CAF9A' }}>
-              Team “Facing Struggle, Gaining Strength”
+              The Lending Hand Initiative × National Kidney Foundation
             </div>
           </div>
 
