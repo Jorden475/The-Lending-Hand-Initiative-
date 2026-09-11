@@ -20,73 +20,67 @@ export default async function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '50px 80px',
           fontFamily: 'sans-serif',
           position: 'relative',
         }}
       >
+        {/* Subtle background circles — matches hero */}
+        <div style={{
+          position: 'absolute', top: -120, right: -120,
+          width: 400, height: 400,
+          background: '#4CAF9A', borderRadius: '50%', opacity: 0.1,
+          display: 'flex',
+        }} />
+        <div style={{
+          position: 'absolute', bottom: -80, left: -80,
+          width: 280, height: 280,
+          background: '#2D7A6A', borderRadius: '50%', opacity: 0.1,
+          display: 'flex',
+        }} />
+
         {/* Logo — top left */}
-        <div style={{ position: 'absolute', top: 44, left: 60, display: 'flex' }}>
-          <img src={logoSrc} style={{ height: 56, width: 'auto' }} alt="The Lending Hand Initiative" />
+        <div style={{ position: 'absolute', top: 44, left: 56, display: 'flex' }}>
+          <img src={logoSrc} style={{ height: 60, width: 'auto' }} alt="The Lending Hand Initiative" />
         </div>
 
-        {/* Event badge */}
-        <div
-          style={{
-            fontSize: 15,
-            color: '#4CAF9A',
+        {/* Center content */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0 }}>
+          {/* Badge */}
+          <div style={{
+            background: 'rgba(45,122,106,0.3)',
+            color: '#bbf7d0',
+            fontSize: 13,
+            fontWeight: 600,
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
-            fontWeight: 600,
-            marginBottom: 24,
-          }}
-        >
-          NKF Kidney Walk · Atlanta 2026
-        </div>
+            padding: '8px 22px',
+            borderRadius: 100,
+            marginBottom: 28,
+          }}>
+            NKF Kidney Walk · Atlanta 2026
+          </div>
 
-        {/* Headline */}
-        <div
-          style={{
-            fontSize: 64,
+          {/* Main headline */}
+          <div style={{
+            fontSize: 72,
             fontWeight: 800,
             color: '#ffffff',
             textAlign: 'center',
-            lineHeight: 1.1,
+            lineHeight: 1.05,
             marginBottom: 20,
-          }}
-        >
-          Walk With Us
-        </div>
+          }}>
+            Walk With Us Tomorrow
+          </div>
 
-        {/* Subheader */}
-        <div
-          style={{
-            fontSize: 22,
-            color: '#bbf7d0',
+          {/* Team name */}
+          <div style={{
+            fontSize: 30,
+            fontWeight: 600,
+            color: '#4CAF9A',
             textAlign: 'center',
-            marginBottom: 44,
-          }}
-        >
-          The Lending Hand Initiative × National Kidney Foundation
-        </div>
-
-        {/* Event details row */}
-        <div style={{ display: 'flex', gap: 48 }}>
-          {[
-            { label: 'Date', value: 'Sat, Sept 12' },
-            { label: 'Location', value: 'The Battery, Atlanta' },
-            { label: 'Check-In', value: '8:00 AM' },
-            { label: 'Walk Starts', value: '9:30 AM' },
-          ].map(({ label, value }) => (
-            <div key={label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: '#4CAF9A', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-                {label}
-              </div>
-              <div style={{ fontSize: 18, fontWeight: 600, color: '#ffffff' }}>
-                {value}
-              </div>
-            </div>
-          ))}
+          }}>
+            Team “Facing Struggle, Gaining Strength”
+          </div>
         </div>
       </div>
     ),
