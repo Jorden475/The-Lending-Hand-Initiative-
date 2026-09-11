@@ -75,9 +75,6 @@ export default function KidneyWalk() {
       <section className="py-20 max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-brand-dark mb-4">Why This Walk Matters</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            For the Albright-Henighan family, this isn&apos;t just a walk — it&apos;s personal.
-          </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
