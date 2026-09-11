@@ -17,72 +17,76 @@ export default async function Image() {
           width: '100%',
           height: '100%',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '50px 80px',
           fontFamily: 'sans-serif',
-          overflow: 'hidden',
+          position: 'relative',
         }}
       >
-        {/* Left accent bar */}
-        <div style={{ width: 12, background: '#4CAF9A', flexShrink: 0 }} />
+        {/* Logo — top left */}
+        <div style={{ position: 'absolute', top: 44, left: 60, display: 'flex' }}>
+          <img src={logoSrc} style={{ height: 56, width: 'auto' }} alt="The Lending Hand Initiative" />
+        </div>
 
-        {/* Main content */}
+        {/* Event badge */}
         <div
           style={{
-            flex: 1,
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            padding: '52px 60px',
+            fontSize: 15,
+            color: '#4CAF9A',
+            letterSpacing: '0.18em',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+            marginBottom: 24,
           }}
         >
-          {/* Top: logo + event badge */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <img src={logoSrc} style={{ height: 64, width: 'auto' }} alt="The Lending Hand Initiative" />
-            <div
-              style={{
-                background: 'rgba(76,175,154,0.2)',
-                border: '1px solid rgba(76,175,154,0.5)',
-                borderRadius: 100,
-                padding: '8px 20px',
-                fontSize: 14,
-                fontWeight: 600,
-                color: '#4CAF9A',
-                letterSpacing: '0.12em',
-                textTransform: 'uppercase',
-              }}
-            >
-              NKF Kidney Walk · Atlanta 2026
-            </div>
-          </div>
+          NKF Kidney Walk · Atlanta 2026
+        </div>
 
-          {/* Middle: headline */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <div style={{ fontSize: 58, fontWeight: 800, color: '#ffffff', lineHeight: 1.05 }}>
-              Walk With Us
-            </div>
-            <div style={{ fontSize: 28, fontWeight: 600, color: '#4CAF9A' }}>
-              The Lending Hand Initiative × National Kidney Foundation
-            </div>
-          </div>
+        {/* Headline */}
+        <div
+          style={{
+            fontSize: 64,
+            fontWeight: 800,
+            color: '#ffffff',
+            textAlign: 'center',
+            lineHeight: 1.1,
+            marginBottom: 20,
+          }}
+        >
+          Walk With Us
+        </div>
 
-          {/* Bottom: event details row */}
-          <div style={{ display: 'flex', gap: 32 }}>
-            {[
-              { label: 'Date', value: 'Sat, Sept 12' },
-              { label: 'Location', value: 'The Battery, Atlanta' },
-              { label: 'Check-In', value: '8:00 AM' },
-              { label: 'Walk Starts', value: '9:30 AM' },
-            ].map(({ label, value }) => (
-              <div key={label} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-                <div style={{ fontSize: 11, fontWeight: 700, color: '#4CAF9A', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-                  {label}
-                </div>
-                <div style={{ fontSize: 17, fontWeight: 600, color: '#bbf7d0' }}>
-                  {value}
-                </div>
+        {/* Subheader */}
+        <div
+          style={{
+            fontSize: 22,
+            color: '#bbf7d0',
+            textAlign: 'center',
+            marginBottom: 44,
+          }}
+        >
+          The Lending Hand Initiative × National Kidney Foundation
+        </div>
+
+        {/* Event details row */}
+        <div style={{ display: 'flex', gap: 48 }}>
+          {[
+            { label: 'Date', value: 'Sat, Sept 12' },
+            { label: 'Location', value: 'The Battery, Atlanta' },
+            { label: 'Check-In', value: '8:00 AM' },
+            { label: 'Walk Starts', value: '9:30 AM' },
+          ].map(({ label, value }) => (
+            <div key={label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: '#4CAF9A', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+                {label}
               </div>
-            ))}
-          </div>
+              <div style={{ fontSize: 18, fontWeight: 600, color: '#ffffff' }}>
+                {value}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     ),
