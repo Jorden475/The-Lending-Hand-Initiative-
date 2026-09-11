@@ -111,7 +111,7 @@ export default function KidneyWalk() {
             &ldquo;Facing Struggle, Gaining Strength&rdquo; is more than a team name — it&apos;s the Albright-Henighan family&apos;s story. After a rare kidney disease diagnosis changed everything, Jaime, Jorden, and Joshua turned their experience into a mission: ensuring no family walks this road alone and that every community has access to the information and support they need.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Through The Lending Hand Initiative, our family has brought the patient and family perspective to the Congressional Black Caucus, Kidney Disease: Improving Global Outcomes (KDIGO) in Ghana, the U.S. Food and Drug Administration (FDA), NephCure Kidney International, the National Organization for Rare Disorders (NORD), and the International Society of Glomerular Disease (ISGD). Tomorrow, we walk to continue building awareness and supporting families affected by kidney disease.
+            Through The Lending Hand Initiative, our family has brought the patient and caregiver perspective to the Congressional Black Caucus, Kidney Disease: Improving Global Outcomes (KDIGO) in Ghana, the U.S. Food and Drug Administration (FDA), NephCure Kidney International, the National Organization for Rare Disorders (NORD), and the International Society of Glomerular Disease (ISGD). Tomorrow, we walk to continue building awareness and supporting families affected by kidney disease.
           </p>
         </div>
       </section>
