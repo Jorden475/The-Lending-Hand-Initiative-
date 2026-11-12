@@ -20,51 +20,54 @@ export default async function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '60px 100px',
           fontFamily: 'sans-serif',
+          position: 'relative',
         }}
       >
+        {/* Background circles */}
+        <div style={{
+          position: 'absolute', top: -120, right: -120,
+          width: 420, height: 420,
+          background: '#4CAF9A', borderRadius: '50%', opacity: 0.1,
+          display: 'flex',
+        }} />
+        <div style={{
+          position: 'absolute', bottom: -80, left: -80,
+          width: 300, height: 300,
+          background: '#2D7A6A', borderRadius: '50%', opacity: 0.1,
+          display: 'flex',
+        }} />
+
+        {/* Logo — large and centered at top */}
         <img
           src={logoSrc}
-          style={{ width: 220, height: 'auto', marginBottom: 36 }}
+          style={{ width: 160, height: 'auto', marginBottom: 40 }}
           alt="The Lending Hand Initiative"
         />
 
-        <div
-          style={{
-            fontSize: 18,
-            color: '#4CAF9A',
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            marginBottom: 20,
-            fontWeight: 600,
-          }}
-        >
-          Patient Advocacy · Health Equity · Community Impact
+        {/* Main headline */}
+        <div style={{
+          fontSize: 62,
+          fontWeight: 800,
+          color: '#ffffff',
+          textAlign: 'center',
+          lineHeight: 1.1,
+          marginBottom: 20,
+          maxWidth: 900,
+        }}>
+          The Lending Hand Initiative
         </div>
 
-        <div
-          style={{
-            fontSize: 24,
-            color: '#bbf7d0',
-            textAlign: 'center',
-            maxWidth: 820,
-            lineHeight: 1.5,
-          }}
-        >
-          Bridging the gap between rare kidney disease communities and the organizations working to serve them.
-        </div>
-
-        <div
-          style={{
-            marginTop: 40,
-            fontSize: 16,
-            color: '#4CAF9A',
-            fontWeight: 600,
-            letterSpacing: '0.05em',
-          }}
-        >
-          thelendinghandinitiative.org
+        {/* Tagline */}
+        <div style={{
+          fontSize: 24,
+          color: '#4CAF9A',
+          textAlign: 'center',
+          fontWeight: 500,
+          maxWidth: 780,
+          lineHeight: 1.5,
+        }}>
+          Patient Advocacy · Rare Kidney Disease · Health Equity
         </div>
       </div>
     ),
