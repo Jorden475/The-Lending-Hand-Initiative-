@@ -33,7 +33,7 @@ export default async function Image() {
           {/* Badge */}
           <div style={{ display: 'flex', background: 'rgba(45,122,106,0.35)', borderRadius: 100, padding: '7px 20px', marginBottom: 28 }}>
             <span style={{ fontSize: 13, fontWeight: 600, color: '#bbf7d0', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-              Patient Advocacy · Community Impact
+              Patient Advocacy · Health Equity · Community Impact
             </span>
           </div>
 
