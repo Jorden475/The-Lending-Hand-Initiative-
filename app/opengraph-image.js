@@ -23,11 +23,11 @@ export default async function Image() {
         }}
       >
         {/* Top bar — logo right */}
-        <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', marginBottom: 48 }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', height: 80 }}>
           <img src={logoSrc} style={{ height: 80, width: 'auto' }} />
         </div>
 
-        {/* Main content — centered */}
+        {/* Main content — centered between logo row and matching bottom spacer */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, justifyContent: 'center' }}>
 
           {/* Badge */}
@@ -50,6 +50,9 @@ export default async function Image() {
             Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and driving meaningful change.
           </div>
         </div>
+
+        {/* Bottom spacer — matches logo row height to keep content centered */}
+        <div style={{ display: 'flex', height: 80 }} />
       </div>
     ),
     { ...size }
