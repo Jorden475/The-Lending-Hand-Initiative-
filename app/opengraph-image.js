@@ -18,56 +18,99 @@ export default async function Image() {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
           fontFamily: 'sans-serif',
           position: 'relative',
+          overflow: 'hidden',
         }}
       >
-        {/* Background circles */}
+        {/* Background circles — matches site hero */}
         <div style={{
-          position: 'absolute', top: -120, right: -120,
-          width: 420, height: 420,
+          position: 'absolute', top: -160, right: -160,
+          width: 500, height: 500,
           background: '#4CAF9A', borderRadius: '50%', opacity: 0.1,
           display: 'flex',
         }} />
         <div style={{
-          position: 'absolute', bottom: -80, left: -80,
-          width: 300, height: 300,
+          position: 'absolute', bottom: -100, left: -100,
+          width: 340, height: 340,
           background: '#2D7A6A', borderRadius: '50%', opacity: 0.1,
           display: 'flex',
         }} />
 
-        {/* Logo — large and centered at top */}
-        <img
-          src={logoSrc}
-          style={{ width: 160, height: 'auto', marginBottom: 40 }}
-          alt="The Lending Hand Initiative"
-        />
-
-        {/* Main headline */}
+        {/* Navbar row — logo */}
         <div style={{
-          fontSize: 62,
-          fontWeight: 800,
-          color: '#ffffff',
-          textAlign: 'center',
-          lineHeight: 1.1,
-          marginBottom: 20,
-          maxWidth: 900,
+          display: 'flex',
+          alignItems: 'center',
+          padding: '36px 56px 0',
         }}>
-          The Lending Hand Initiative
+          <img src={logoSrc} style={{ height: 52, width: 'auto' }} alt="The Lending Hand Initiative" />
         </div>
 
-        {/* Tagline */}
+        {/* Hero content */}
         <div style={{
-          fontSize: 24,
-          color: '#4CAF9A',
-          textAlign: 'center',
-          fontWeight: 500,
-          maxWidth: 780,
-          lineHeight: 1.5,
+          display: 'flex',
+          flexDirection: 'column',
+          padding: '48px 56px 0',
+          flex: 1,
         }}>
-          Patient Advocacy · Rare Kidney Disease · Health Equity
+          {/* Badge */}
+          <div style={{
+            display: 'flex',
+            background: 'rgba(45,122,106,0.35)',
+            borderRadius: 100,
+            padding: '8px 20px',
+            marginBottom: 28,
+            width: 'fit-content',
+          }}>
+            <span style={{
+              fontSize: 13,
+              fontWeight: 600,
+              color: '#bbf7d0',
+              letterSpacing: '0.14em',
+              textTransform: 'uppercase',
+            }}>
+              Patient Advocacy · Health Equity · Community Impact
+            </span>
+          </div>
+
+          {/* Headline */}
+          <div style={{
+            fontSize: 68,
+            fontWeight: 800,
+            color: '#ffffff',
+            lineHeight: 1.05,
+            marginBottom: 0,
+          }}>
+            Advancing Trust,
+          </div>
+          <div style={{
+            fontSize: 68,
+            fontWeight: 800,
+            color: '#4CAF9A',
+            lineHeight: 1.05,
+            marginBottom: 0,
+          }}>
+            Equity &amp; Community
+          </div>
+          <div style={{
+            fontSize: 68,
+            fontWeight: 800,
+            color: '#ffffff',
+            lineHeight: 1.05,
+            marginBottom: 28,
+          }}>
+            Impact
+          </div>
+
+          {/* Subtext */}
+          <div style={{
+            fontSize: 20,
+            color: '#bbf7d0',
+            lineHeight: 1.5,
+            maxWidth: 620,
+          }}>
+            Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and driving meaningful change.
+          </div>
         </div>
       </div>
     ),
