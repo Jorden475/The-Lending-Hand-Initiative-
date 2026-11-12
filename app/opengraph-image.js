@@ -23,8 +23,8 @@ export default async function Image() {
         }}
       >
         {/* Top bar — logo right */}
-        <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', height: 80 }}>
-          <img src={logoSrc} style={{ height: 80, width: 'auto' }} />
+        <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', height: 96 }}>
+          <img src={logoSrc} style={{ height: 96, width: 114 }} />
         </div>
 
         {/* Main content — centered between logo row and matching bottom spacer */}
@@ -52,7 +52,7 @@ export default async function Image() {
         </div>
 
         {/* Bottom spacer — matches logo row height to keep content centered */}
-        <div style={{ display: 'flex', height: 80 }} />
+        <div style={{ display: 'flex', height: 96 }} />
       </div>
     ),
     { ...size }
