@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from './Logo';
 
-const links = [
+const RESEARCH_EXPIRY = new Date('2027-01-01');
+
+const baseLinks = [
   { href: '/',          label: 'Home' },
   { href: '/about',     label: 'About' },
   { href: '/services',  label: 'Services' },
@@ -13,6 +15,12 @@ const links = [
   { href: '/resources', label: 'Resources' },
   { href: '/contact',   label: 'Contact' },
 ];
+
+const researchLink = { href: '/research/podomount-pfsgs', label: 'Research' };
+
+const links = new Date() < RESEARCH_EXPIRY
+  ? [...baseLinks.slice(0, 6), researchLink, baseLinks[6]]
+  : baseLinks;
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
