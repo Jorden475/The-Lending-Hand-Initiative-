@@ -18,47 +18,35 @@ export default async function Image() {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
           fontFamily: 'sans-serif',
-          position: 'relative',
-          overflow: 'hidden',
+          padding: '44px 60px',
         }}
       >
-        {/* Background circles */}
-        <div style={{ position: 'absolute', top: -140, right: -140, width: 420, height: 420, background: '#4CAF9A', borderRadius: '50%', opacity: 0.1, display: 'flex' }} />
-        <div style={{ position: 'absolute', bottom: -80, left: -80, width: 300, height: 300, background: '#2D7A6A', borderRadius: '50%', opacity: 0.1, display: 'flex' }} />
-
-        {/* Logo — top right */}
-        <div style={{ position: 'absolute', top: 40, right: 56, display: 'flex' }}>
-          <img src={logoSrc} style={{ height: 72, width: 'auto' }} alt="" />
+        {/* Top bar — logo right */}
+        <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', marginBottom: 48 }}>
+          <img src={logoSrc} style={{ height: 80, width: 'auto' }} />
         </div>
 
-        {/* Centered content */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 80px' }}>
+        {/* Main content — centered */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, justifyContent: 'center' }}>
 
           {/* Badge */}
-          <div style={{ display: 'flex', background: 'rgba(45,122,106,0.35)', borderRadius: 100, padding: '7px 20px', marginBottom: 24 }}>
+          <div style={{ display: 'flex', background: 'rgba(45,122,106,0.35)', borderRadius: 100, padding: '7px 20px', marginBottom: 28 }}>
             <span style={{ fontSize: 13, fontWeight: 600, color: '#bbf7d0', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-              Patient Advocacy · Health Equity · Community Impact
+              Patient Advocacy · Community Impact
             </span>
           </div>
 
-          {/* Headline line 1 */}
-          <div style={{ display: 'flex', fontSize: 70, fontWeight: 800, color: '#ffffff', lineHeight: 1.05 }}>
+          {/* Headline — 2 lines */}
+          <div style={{ display: 'flex', fontSize: 58, fontWeight: 800, color: '#ffffff', lineHeight: 1.1, marginBottom: 4 }}>
             Advancing Trust,
           </div>
-          {/* Headline line 2 */}
-          <div style={{ display: 'flex', fontSize: 70, fontWeight: 800, color: '#4CAF9A', lineHeight: 1.05 }}>
-            Equity &amp; Community
-          </div>
-          {/* Headline line 3 */}
-          <div style={{ display: 'flex', fontSize: 70, fontWeight: 800, color: '#ffffff', lineHeight: 1.05, marginBottom: 24 }}>
-            Impact
+          <div style={{ display: 'flex', fontSize: 58, fontWeight: 800, color: '#4CAF9A', lineHeight: 1.1, marginBottom: 28 }}>
+            Equity &amp; Community Impact
           </div>
 
           {/* Subtext */}
-          <div style={{ display: 'flex', fontSize: 19, color: '#bbf7d0', lineHeight: 1.5, textAlign: 'center', maxWidth: 700 }}>
+          <div style={{ display: 'flex', fontSize: 19, color: '#bbf7d0', lineHeight: 1.5, textAlign: 'center', maxWidth: 680 }}>
             Helping organizations reach rare kidney disease communities — building awareness, strengthening trust, and driving meaningful change.
           </div>
         </div>
